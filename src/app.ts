@@ -1,12 +1,5 @@
-
 import * as http from "http"
-import {IncomingMessage, RequestListener, ServerResponse} from "http";
+import {appController} from "./controller/controller";
 
-
-const requestListener: RequestListener = (req: IncomingMessage, res: ServerResponse) => {
-    console.log('foi')
-    return 'teste';
-}
-
-export const app = http.createServer(requestListener)
+export const app = http.createServer(appController.buildRequestListener())
     .listen(3000, () => console.log('app running at', 3000))
