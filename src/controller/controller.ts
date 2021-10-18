@@ -21,3 +21,9 @@ export class CalendarAppController {
 }
 
 export const appController = new CalendarAppController();
+export const CORS_HEADERS = {
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Request-Method': '*',
+    'Access-Control-Allow-Methods': 'GET',
+    'Access-Control-Allow-Headers': '*',
+}

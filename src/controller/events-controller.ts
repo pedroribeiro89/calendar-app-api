@@ -1,7 +1,7 @@
 import {IncomingMessage, ServerResponse} from "http";
 import {listEventsUseCase} from "../business/list-events-usecase";
-import * as url from "url";
 import {UrlWithParsedQuery} from "url";
+import {CORS_HEADERS} from "./controller";
 
 export class EventsController {
     private getEvents(request: IncomingMessage, response: ServerResponse, parsedUrl: UrlWithParsedQuery) {
@@ -11,7 +11,7 @@ export class EventsController {
 
         const events = listEventsUseCase.execute(year, month);
 
-        response.writeHead(200, {'Content-Type': 'application/json'})
+        response.writeHead(200, {'Content-Type': 'application/json', ...CORS_HEADERS})
         response.write(events)
         response.end();
     }
