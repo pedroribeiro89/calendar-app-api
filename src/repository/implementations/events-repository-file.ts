@@ -15,12 +15,7 @@ export class EventsRepositoryFile implements IEventsRepository {
                 score: event.score
             }
         });
-        // console.log(this.data.length);
     }
-
-    // listEvents(year: string | null, month: string | null): CalendarEvent[] {
-    //     return [];
-    // }
 
     listEvents(year: string | null, month: string | null): CalendarEvent[] {
         return this.data.filter((event: CalendarEvent) => {

@@ -3,6 +3,7 @@ import {eventsController} from "./events-controller";
 import url from "url";
 
 export class CalendarAppController {
+
     buildRequestListener(): RequestListener {
         return (request: IncomingMessage, response: ServerResponse) => {
             const parsedUrl = url.parse(request.url ?? '' ,true);
