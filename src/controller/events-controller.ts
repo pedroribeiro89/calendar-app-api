@@ -16,7 +16,6 @@ export class EventsController {
             response.write(events)
             response.end();
         } catch (e: any) {
-            // response.statusCode = 500;
             response.writeHead(500, {'Content-Type': 'application/json', ...CORS_HEADERS})
             response.write(JSON.stringify(e));
             response.end();
