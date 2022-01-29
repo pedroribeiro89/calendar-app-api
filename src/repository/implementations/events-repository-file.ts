@@ -2,7 +2,7 @@ import {IEventsRepository} from "../events-repository";
 import {CalendarEvent} from "../../models/Event";
 
 export class EventsRepositoryFile implements IEventsRepository {
-    private data: CalendarEvent[];
+    public  data: CalendarEvent[];
 
     constructor() {
         this.data = require('./../../data/events.json');

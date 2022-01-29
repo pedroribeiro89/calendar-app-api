@@ -1,0 +1,62 @@
+[
+  {
+    "round": "Matchday 1",
+    "date": "2019-08-09",
+    "team1": "Team 1",
+    "team2": "Team 2",
+    "score": {
+      "ft": [
+        4,
+        1
+      ]
+    }
+  },
+  {
+    "round": "Matchday 1",
+    "date": "2019-08-10",
+    "team1": "Team 3",
+    "team2": "Team 4",
+    "score": {
+      "ft": [
+        4,
+        1
+      ]
+    }
+  },
+  {
+    "round": "Matchday 2",
+    "date": "2020-11-09",
+    "team1": "Team 5",
+    "team2": "Team 6",
+    "score": {
+      "ft": [
+        4,
+        1
+      ]
+    }
+  },
+  {
+    "round": "Matchday 2",
+    "date": "2020-10-10",
+    "team1": "Team 7",
+    "team2": "Team 8",
+    "score": {
+      "ft": [
+        4,
+        1
+      ]
+    }
+  },
+  {
+    "round": "Matchday 3",
+    "date": "2021-08-09",
+    "team1": "Team 9",
+    "team2": "Team 10",
+    "score": {
+      "ft": [
+        4,
+        1
+      ]
+    }
+  }
+]
